@@ -36,7 +36,7 @@
     "clean": "rimraf dist",
     "lint": "eslint --ext js,ts,tsx src",
     "build": "npm run clean && npm run build-ts && npm run build-css",
-    "prepublish": "npm run lint && npm run build",
+    "prepublishOnly": "npm run lint && npm run build",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
